@@ -29,18 +29,18 @@ for (StorageVolume storageVolume : storageVolumes) {
 
 You can get storage statistics for a specific package on the requested storage volume. You need UserHandler, UUID and package name which you want to get storage stats.
 
-** UUID **
+**UUID**
  represents an immutable universally unique identifier (UUID). A UUID represents a 128-bit value.
  
 The following piece of code will give you. 
 
-** getAppBytes **
+**getAppBytes**
 Return the size of app. This includes APK files, optimized compiler output, and unpacked native libraries.
 
-** getDataBytes **
+**getDataBytes**
 Return the size of all data. This includes files stored under getDataDir(), getCacheDir(), getCodeCacheDir().
 
-** getCacheBytes **
+**getCacheBytes**
 Return the size of all cached data. This includes files stored under getCacheDir() and getCodeCacheDir().
 
 ```java
